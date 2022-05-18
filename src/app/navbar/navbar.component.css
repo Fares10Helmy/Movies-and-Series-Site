@@ -1,0 +1,10 @@
+a.nav-link{color: aliceblue; }
+.x{margin-left: 380px;}
+a.navbar-brand.m-2
+  {
+    font-size: 35px;
+    font-weight: bolder;
+    padding-right: 30px;
+    padding-left: 10px;
+    font-style: italic;
+  }

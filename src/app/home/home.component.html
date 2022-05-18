@@ -1,0 +1,46 @@
+<div class="row">
+  <div class="col-md-4">
+    <h2 class="my-3" >
+      Trending <br>
+      Movies <br>
+      To Watch Now<br>
+      ----------------------
+    </h2>
+  </div>
+
+  <div *ngFor="let movie of terndMovie" class="test col-md-2 position-relative">
+    <div [routerLink]="['/movies-details', movie.media_type , movie.id]" class="movie my-2">
+
+    <img [src]="imgSrc+movie.poster_path" class="w-100" alt="">
+    <h3 class="h6 my-3">{{movie.title}}</h3>
+    <div class="rate">{{movie.vote_average}}</div>
+    </div>
+
+  </div>
+
+</div>
+
+
+<br> <br>
+
+<div class="row">
+  <div class="col-md-4">
+    <h2 class="my-3" >
+      Trending <br>
+      TV <br>
+      To Watch Now<br>
+      ----------------------
+    </h2>
+  </div>
+
+  <div *ngFor="let tv of trendFilm" class=" test col-md-2 position-relative">
+    <div  [routerLink]="['/tv-details', tv.media_type , tv.id]" class="tv my-2">
+
+    <img [src]="imgSrc+tv.poster_path" class="w-100 " alt="">
+    <h3 class="h6 my-3 ">{{tv.name}}</h3>
+    <div class="rate">{{tv.vote_average}}</div>
+    </div>
+
+  </div>
+
+</div>

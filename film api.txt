@@ -1,0 +1,7 @@
+key:
+
+85298515888feea7c13503b2ed33d4a5
+
+url:
+
+https://api.themoviedb.org/3/trending/movie/week?api_key=85298515888feea7c13503b2ed33d4a5

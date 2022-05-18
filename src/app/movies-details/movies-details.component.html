@@ -1,0 +1,28 @@
+<div class="row">
+
+  <div class="col-md-4">
+
+    <img [src]="imgSrc+moviesDetails.poster_path" class="w-100">
+  </div>
+
+  <div class="col-md-8">
+
+    <h2 class="my-2">{{moviesDetails.title}} </h2>
+    <p class="my-5">{{moviesDetails.tagline}}</p>
+                                        <p class="my-2"> Vote : {{moviesDetails.vote_average}}</p>
+                                        <p class="my-2">Vote Count : {{moviesDetails.vote_count}}</p>
+                                        <p class="my-2"> Popularity : {{moviesDetails.popularity}}</p>
+                                        <p class="my-2">Date : {{moviesDetails.release_date}}</p>
+    <p class="lead my-2 ">{{moviesDetails.overview}}</p>
+
+
+
+
+
+  </div>
+
+
+</div>
+
+
+

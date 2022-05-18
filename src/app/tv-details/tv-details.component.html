@@ -1,0 +1,26 @@
+<div class="row">
+
+  <div class="col-md-4">
+
+    <img [src]="imgSrc+tvDetails.poster_path" class="w-100">
+  </div>
+
+  <div class="col-md-8">
+
+    <h2 class="my-2">                   {{tvDetails.name}} </h2>
+    <p class="my-5">                   {{tvDetails.tagline}}</p>
+                                        <p class="my-2"> Vote : {{tvDetails.vote_average}}</p>
+                                        <p class="my-2">Vote Count : {{tvDetails.vote_count}}</p>
+                                        <p class="my-2"> Popularity : {{tvDetails.popularity}}</p>
+                                        <p class="my-2">Date : {{tvDetails.first_air_date}}</p>
+    <p class="lead my-2 ">                  {{tvDetails.overview}}</p>
+
+
+
+
+
+  </div>
+
+
+
+</div>

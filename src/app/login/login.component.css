@@ -1,0 +1,25 @@
+
+
+
+.part
+{
+  background-image: linear-gradient(-45deg,#131722 0%, #242d47 100%);
+  height: 100vh ;
+  border-bottom-right-radius: 70%;
+  position: relative;
+}
+h1 {color:#242d47 ; font-style: italic;}
+h4{color:#131722; font-style: italic;}
+button{color:aliceblue}
+p{color: #131722; font-style: italic;}
+
+.part img {position: absolute; bottom: 150px;left: 200px;}
+button{background-color: #131722; border: none;padding: 10px; border-radius: 20px;}
+
+.row{background-color:white ;}
+
+div.row.no-gutters {margin-right: 0px;}
+div.col-6{padding-left: 0px;}
+
+
+

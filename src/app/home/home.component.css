@@ -1,0 +1,22 @@
+.rate
+{
+  position: absolute;
+  top: 0px;
+  right: 10px;
+  padding: 8px;
+  font-weight: 600;
+  font-size: 12px;
+  background-color:#242d47;
+
+
+}
+
+.test
+{
+  cursor: pointer;
+
+}
+.test:hover
+{
+  opacity: 0.7;
+}

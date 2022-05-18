@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0 ,shrink-to-fit=no">
+
+
+
+    <title>Form</title>
+</head>
+<body>
+
+
+
+<div class="form  ">
+  <div class="row no-gutters">
+
+<div class="col-6">
+  <div class="part">
+      <img src="assets/images/p1.svg"class="w-50" alt="">
+    </div>
+</div>
+
+
+    <div class="col-6 py-5 px-5">
+      <h1 class="py-3">NAVE</h1>
+      <h4>Sign into your account </h4>
+
+      <form [formGroup]="loginform">
+
+        <div class="form-row">
+          <div class="col-7">
+            <input formControlName="email" type="email" placeholder="Email Address" class="form-control my-3 p-4">
+          </div>
+        </div>
+
+
+        <div class="form-row">
+          <div class="col-7">
+            <input formControlName="password" type="password" placeholder=" ********" class="form-control  my-3 p-4">
+          </div>
+        </div>
+
+
+
+        <div class="form-row">
+          <div class="col-7">
+
+        <!-- error -->
+            <div *ngIf="error" class="alert alert-danger">
+              {{error}}
+            </div>
+        <!-- end error -->
+
+            <button (click)="login(loginform)" [disabled]="loginform.invalid" type="button" class="  w-100 mb-5">Login</button>
+          </div>
+        </div>
+
+        <a href="#">Forget my password</a>
+        <p>don't have an account <a routerLink="/register">Register here </a>  </p>
+
+      </form>
+
+    </div>
+  </div>
+
+
+
+
+
+
+</div>
+
+
+
+
+
+
+  </body>
+  </html>
